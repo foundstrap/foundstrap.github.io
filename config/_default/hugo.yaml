@@ -1,4 +1,4 @@
-baseURL: "foundstrap.github.io"
+baseURL: "https://foundstrap.github.io/"
 languageCode: "en-us"
 title: "Foundstrap Documentation"
 theme: "hextra"
