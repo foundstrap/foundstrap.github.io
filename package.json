@@ -1,0 +1,11 @@
+{
+  "name": "foundstrap.github.io",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:documentation": "node build-doc.js"
+  },
+  "devDependencies": {
+    "inquirer": "^14.0.2"
+  }
+}

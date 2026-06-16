@@ -6,6 +6,9 @@ relativeURLs: true
 uglyURLs: true
 canonifyURLs: false
 
+# MATIKAN SRI BIAR BROWSER TIDAK MEMBLOKIR ASSET LOKAL (file:///)
+disableSRI: true
+
 # Tambahkan ini untuk memperkuat sistem path relatif
 outputs:
   home: ["HTML", "RSS", "JSON"]
@@ -18,3 +21,4 @@ params:
     # Jika CSS masih tidak muncul, coba matikan fitur search sementara untuk tes.
     search:
       enable: false
+    flexsearch: false
