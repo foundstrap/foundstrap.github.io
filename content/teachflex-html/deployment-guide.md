@@ -51,6 +51,7 @@ public_html/
 ├── index.html ← from html/index.html
 ├── about-us.html ← from html/about-us.html
 ├── assets/ ← from html/assets/
+├── php/ ← from html/php/
 └── ... other files
 ```
 
@@ -95,6 +96,7 @@ Most hosts (cPanel, Plesk) have File Manager:
 public_html/
 ├── index.html ← Homepage
 ├── assets/ ← All assets
+├── php/ ← All php
 └── other pages
 ```
 
@@ -104,6 +106,7 @@ public_html/
 public_html/learn/
 ├── index.html
 ├── assets/
+├── php/
 └── other pages
 ```
 

@@ -20,6 +20,7 @@ Overview of all 11 HTML pages and their main sections, so you know what content 
 | Blog List       | blog-list.html        | Articles listing    | Page Title, Categories, Recent posts, Sidebar                 |
 | Blog Detail     | blog-details.html     | Single article      | Page Title, Content, Related posts, CTA                       |
 | Pricing         | pricing.html          | Plans comparison    | Page Title, Pricing tables, FAQ, CTA                          |
+| Career          | career.html           | Job Vacancy         | Page Title, Job List, Modal Form                              |
 | Testimonials    | testimonials.html     | Social proof        | Page Title, Testimonials, Success Story, Trusted Partner, CTA |
 | FAQ             | faq.html              | Questions & Answers | Page Title, Accordion FAQ, CTA                                |
 | Contact         | contact.html          | Contact form        | Page Title, Contact info, Map, Form                           |

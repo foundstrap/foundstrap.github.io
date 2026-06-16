@@ -58,6 +58,12 @@ The `html` folder contains everything needed to run the website:
 {{< filetree/file name="another image assets...jpg">}}
 {{< /filetree/folder >}}
 {{< /filetree/folder >}}
+{{< filetree/folder name="php" state="open" >}}
+{{< filetree/file name="contact-form.php" >}}
+{{< filetree/file name="registration-form.php" >}}
+{{< filetree/file name="career-form.php" >}}
+{{< filetree/file name="comment-form.php" >}}
+{{< /filetree/folder >}}
 {{< filetree/file name="index.html" >}}
 {{< filetree/file name="about-us.html" >}}
 {{< filetree/file name="bootcamp.html" >}}
@@ -65,6 +71,7 @@ The `html` folder contains everything needed to run the website:
 {{< filetree/file name="blog-list.html" >}}
 {{< filetree/file name="blog-details.html" >}}
 {{< filetree/file name="pricing.html" >}}
+{{< filetree/file name="career.html" >}}
 {{< filetree/file name="testimonials.html" >}}
 {{< filetree/file name="faq.html" >}}
 {{< filetree/file name="contact.html" >}}
@@ -79,6 +86,7 @@ The `html` folder contains everything needed to run the website:
 - **JavaScript:** 5 files (Bootstrap bundle, Swiper, AOS, jQuery, custom `main.js`)
 - **Fonts:** 2 files (Bootstrap Icons)
 - **Images:** 70+ files (Image `.jpg`, `.png`)
+- **PHP:** 4 files
 
 ## Documentation folder
 
@@ -96,7 +104,7 @@ Double-click `index.html` to read docs offline.
 ## What is NOT included
 
 - Development source files (SCSS, Vite config, Nunjucks templates)
-- Backend files (PHP, Node.js, database)
+- Backend files (Node.js, database)
 - Third-party CDN dependencies (all assets are local files)
 
 ## Production ready

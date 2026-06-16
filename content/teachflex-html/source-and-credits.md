@@ -79,6 +79,10 @@ This Template Kit uses demo images from Envato Elements. You will need to licens
  02. Components
      02.1 Counter Animation
      02.2 Carousel Logos (Swiper)
+     02.3 AJAX Forms Handler
+     02.4 Job Application Modal Handler
+     02.5 Tooltips
+     02.6 Copy Discount
  03. Vendor Initializer
      03.1 AOS (Animate On Scroll)
  04. Custom Scripts

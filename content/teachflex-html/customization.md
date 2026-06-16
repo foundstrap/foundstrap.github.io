@@ -157,29 +157,29 @@ Footer content is in each HTML page footer section:
       </div>
       <div class="col-xl-5">
         <div class="row flex-column flex-lg-row">
-          <div class="col">
+          <div class="col-xl-7">
             <!-- Footer Menu : Start here -->
             <ul class="list-unstyled d-flex flex-column gap-4 footer-menu m-xl-0 mb-md-4">
               <li><a href="about-us.html" class="footer-link">About Us</a></li>
               <li><a href="bootcamp.html" class="footer-link">Bootcamp</a></li>
               <li><a href="faq.html" class="footer-link">FAQ</a></li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
-              <li><a href="#" class="footer-link">Curriculum</a></li>
-              <li><a href="#" class="footer-link">Community Stories</a></li>
-              <li><a href="#" class="footer-link">Instructors</a></li>
+              <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+              <li><a href="testimonials.html" class="footer-link">Community Stories</a></li>
+              <li><a href="blog-list.html" class="footer-link">Our Stories</a></li>
             </ul>
             <!-- Footer Menu : End here -->
           </div>
-          <div class="col">
+          <div class="col-xl-5">
             <!-- Footer CTA : Start here -->
             <div class="d-flex flex-column h-100 justify-content-lg-end align-items-start align-items-lg-end">
-              <strong class="text-lg-end d-block mb-4 lh-base"> Become an Instructor at TeachFlex. </strong>
+              <strong class="text-lg-end d-block mb-4 lh-base"> Build Your Career at TeachFlex. </strong>
               <a
-                href="#"
+                href="career.html"
                 class="btn btn-tf-white btn--rotate-top-right  w-100 w-lg-auto"
-                aria-label="Apply to become an instructor at TeachFlex"
+                aria-label="Explore Careers"
               >
-                <span class="btn-text">Apply Now</span>
+                <span class="btn-text">Join Us</span>
                 <span class="btn-icon" aria-hidden="true">
                   <i class="bi bi-arrow-up-short"></i>
                 </span>
@@ -201,7 +201,7 @@ Footer content is in each HTML page footer section:
       <div class="col-xl-7">
         <!-- Footer Copyright : Start here -->
         <span class="lh-base d-block text-medium text-center text-xl-start m-xl-0 mb-4">
-          &copy; All rights reserved 2025, <strong>Teachflex - Foundstrap Studio</strong>&nbsp;| Envato
+          &copy; All rights reserved 2026, <strong>Teachflex - Foundstrap Studio</strong>&nbsp;| Envato
         </span>
         <!-- Footer Copyright : End here -->
       </div>
@@ -210,16 +210,48 @@ Footer content is in each HTML page footer section:
         <!-- Footer Social Media : Start here -->
         <ul class="footer-social list-unstyled d-flex justify-content-center justify-content-xl-end gap-3 mb-0">
           <li>
-            <a class="tf-social-square" href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a
+              class="tf-social-square"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://x.com"
+              aria-label="Twitter"
+            >
+              <i class="bi bi-twitter-x"></i>
+            </a>
           </li>
           <li>
-            <a class="tf-social-square" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i> </a>
+            <a
+              class="tf-social-square"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://instagram.com"
+              aria-label="Instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
           </li>
           <li>
-            <a class="tf-social-square" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i> </a>
+            <a
+              class="tf-social-square"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://linkedin.com"
+              aria-label="LinkedIn"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
           </li>
           <li>
-            <a class="tf-social-square" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i> </a>
+            <a
+              class="tf-social-square"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://youtube.com"
+              aria-label="YouTube"
+            >
+              <i class="bi bi-youtube"></i>
+            </a>
           </li>
         </ul>
         <!-- Footer Social Media : End here -->

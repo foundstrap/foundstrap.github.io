@@ -21,33 +21,42 @@ After extracting the **Main Files** download from ThemeForest, you will see a st
 
 Inside the `teachflex` folder, the core structure is:
 
-- HTML pages:
+### HTML pages:
 
-  - `index.html` - Main homepage.
-  - `about-us.html` - About page.
-  - `bootcamp.html`, `bootcamp-details.html` - Bootcamp listing and single page.
-  - `blog-list.html`, `blog-details.html` - Blog listing and article page.
-  - `pricing.html` - Pricing and plans page.
-  - `testimonials.html` - Testimonials page.
-  - `faq.html` - FAQ page.
-  - `contact.html` - Contact page.
-  - `404-page.html` - 404 not found page.
+- `index.html` - Main homepage.
+- `about-us.html` - About page.
+- `bootcamp.html` - Bootcamp listing page.
+- `bootcamp-details.html` - Single bootcamp details page with registration form.
+- `blog-list.html` - Blog listing page.
+- `blog-details.html` - Single blog article page with comment form.
+- `pricing.html` - Pricing and plans page.
+- `career.html` - Careers and job opportunities page with application form.
+- `testimonials.html` - Testimonials page.
+- `faq.html` - Frequently Asked Questions page.
+- `contact.html` - Contact page with AJAX contact form.
+- `404-page.html` - Custom 404 error page.
 
-- Assets:
-  - `assets/css/` - All CSS files, including:
-    - `bootstrap.min.css`
-    - `bootstrap-icons.min.css`
-    - `swiper-bundle.min.css`
-    - `aos.css`
-    - `main.css` (main custom stylesheet)
-  - `assets/js/` - All JavaScript files:
-    - `bootstrap.bundle.min.js`
-    - `swiper-bundle.min.js`
-    - `aos.js`
-    - `jquery-3.7.1.min.js`
-    - `main.js` (main custom script)
-  - `assets/fonts/` - Local font files for Bootstrap Icons.
-  - `assets/img/` - All images and graphics used in the template (logos, illustrations, course images, avatars, etc.).
+### Assets:
+
+- `assets/css/` - All CSS files, including:
+  - `bootstrap.min.css`
+  - `bootstrap-icons.min.css`
+  - `swiper-bundle.min.css`
+  - `aos.css`
+  - `main.css` (main custom stylesheet)
+- `assets/js/` - All JavaScript files:
+  - `bootstrap.bundle.min.js`
+  - `swiper-bundle.min.js`
+  - `aos.js`
+  - `jquery-3.7.1.min.js`
+  - `main.js` (main custom script)
+- `assets/fonts/` - Local font files for Bootstrap Icons.
+- `assets/img/` - All images and graphics used in the template (logos, illustrations, course images, avatars, etc.).
+- `php` - The template includes demo PHP files to simulate form submissions. These files are provided for demonstration purposes only and do not send emails or store data. Included files:
+  - `contact-form.php` - Contact form demo handler.
+  - `registration-form.php` - Bootcamp registration form demo handler.
+  - `career-form.php` - Career application form demo handler.
+  - `comment-form.php` - Blog comment form demo handler.
 
 You can upload the `teachflex` folder directly to your hosting, or place its contents inside your existing project structure.
 

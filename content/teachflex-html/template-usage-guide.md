@@ -45,6 +45,9 @@ The main navigation is in the header section of all HTML pages. To edit menu ite
       <a class="dropdown-item" href="pricing.html">Pricing</a>
     </li>
     <li>
+      <a class="dropdown-item" href="career.html">Career</a>
+    </li>
+    <li>
       <a class="dropdown-item" href="faq.html">FAQ</a>
     </li>
     <li>

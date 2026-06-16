@@ -33,7 +33,6 @@ You will now have a compressed `.zip` file that contains the main template files
 1. Locate the downloaded `.zip` file on your computer.
 2. Right‑click and select **Extract** / **Unzip** (or use your preferred archive tool).
 3. After extraction, you will see a structure similar to:
-
    - `teachflex/` (or similar root folder name)
      - `html/` – Main HTML template files.
      - `documentation/` – Offline HTML documentation.
@@ -44,23 +43,35 @@ If your extracted folder name is slightly different, focus on the `html` and `do
 
 Open the `html` folder to find all template files that you will upload to your server:
 
-- HTML pages:
+### HTML pages:
 
-  - `index.html` – Main homepage.
-  - `about-us.html` – About page.
-  - `bootcamp.html`, `bootcamp-details.html` – Bootcamp listing and single page.
-  - `blog-list.html`, `blog-details.html` – Blog listing and article page.
-  - `pricing.html` – Pricing and plans page.
-  - `testimonials.html` – Testimonials page.
-  - `faq.html` – FAQ page.
-  - `contact.html` – Contact page.
-  - `404-page.html` – 404 not found page.
+- `index.html` - Main homepage.
+- `about-us.html` - About page.
+- `bootcamp.html` - Bootcamp listing page.
+- `bootcamp-details.html` - Single bootcamp details page with registration form.
+- `blog-list.html` - Blog listing page.
+- `blog-details.html` - Single blog article page with comment form.
+- `pricing.html` - Pricing and plans page.
+- `career.html` - Careers and job opportunities page with application form.
+- `testimonials.html` - Testimonials page.
+- `faq.html` - Frequently Asked Questions page.
+- `contact.html` - Contact page with AJAX contact form.
+- `404-page.html` - Custom 404 error page.
 
-- Assets folder:
-  - `assets/css/` – All CSS stylesheets (Bootstrap, Bootstrap Icons, Swiper, AOS, and `main.css`).
-  - `assets/js/` – All JavaScript files (`bootstrap.bundle.min.js`, `swiper-bundle.min.js`, `aos.js`, `jquery-3.7.1.min.js`, and `main.js`).
-  - `assets/fonts/` – Font files for Bootstrap Icons.
-  - `assets/img/` – All images and graphics used in the template.
+### Assets folder:
+
+- `assets/css/` – All CSS stylesheets (Bootstrap, Bootstrap Icons, Swiper, AOS, and `main.css`).
+- `assets/js/` – All JavaScript files (`bootstrap.bundle.min.js`, `swiper-bundle.min.js`, `aos.js`, `jquery-3.7.1.min.js`, and `main.js`).
+- `assets/fonts/` – Font files for Bootstrap Icons.
+- `assets/img/` – All images and graphics used in the template.
+
+### PHP Demo Files:
+
+- `php` - The template includes demo PHP files to simulate form submissions. These files are provided for demonstration purposes only and do not send emails or store data. Included files:
+  - `contact-form.php` - Contact form demo handler.
+  - `registration-form.php` - Bootcamp registration form demo handler.
+  - `career-form.php` - Career application form demo handler.
+  - `comment-form.php` - Blog comment form demo handler.
 
 These are the files you will customize and eventually upload to your hosting.
 

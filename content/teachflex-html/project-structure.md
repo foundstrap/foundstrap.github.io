@@ -15,6 +15,7 @@ The `html` folder follows a standard static website structure:
 html/
 ├── index.html              # Homepage
 ├── [other HTML pages...]
+├── php/                    # All PHP files
 └── assets/                 # All static assets
     ├── css/
     ├── fonts/
@@ -117,14 +118,36 @@ All JavaScript plugins are initialized in `assets/js/main.js`:
   const initCarousel = () => /* Carousel Component */
 
   /*!
+   * 02.3 AJAX Forms Handler
+   */
+  const initAjaxForms = () => /* AJAX Forms Component */
+
+  /*!
+   * 02.4 Job Application Modal Handler
+   */
+  const initJobApplicationModal = () => /* Modal Component */
+
+  /*!
+   * 02.5 Tooltips
+   */
+  const initTooltips = () => /* Tooltips Component */
+
+  /*!
+   * 02.6 Copy Discount
+   */
+  const initCopyDiscount = () => /* Copy Discount Component */
+
+  /*!
    * 01. Global Initializer
    */
   const TeachflexInit = () => {
     initCounter();
     initCarousel();
+
+    // 03.1 AOS (Animate On Scroll) Initializer
     if (typeof AOS !== "undefined") {
       AOS.init({
-        duration: 1e3,
+        duration: 1000,
         easing: "ease",
         once: true,
         offset: 120
