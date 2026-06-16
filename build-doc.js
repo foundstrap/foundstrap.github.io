@@ -22,16 +22,15 @@ async function run() {
       return;
     }
 
-    // FORMAT BARU: Inquirer modern membutuhkan format { name, value } untuk pilihan select
     const choiceItems = folders.map((folder) => ({
       name: folder,
       value: folder,
     }));
 
-    // 2. Tampilkan menu pilihan interaktif (Menggunakan tipe 'select' pengganti 'list')
+    // 2. Tampilkan menu pilihan tema
     const answers = await inquirer.prompt([
       {
-        type: "select", // Diubah dari 'list' ke 'select' untuk Inquirer versi baru
+        type: "select",
         name: "selectedFolder",
         message: "Pilih dokumentasi tema yang ingin di-build:",
         choices: choiceItems,
@@ -39,12 +38,33 @@ async function run() {
     ]);
 
     const folderTarget = answers.selectedFolder;
-    console.log(`\n🚀 Memulai build untuk tema: ${folderTarget}...`);
 
-    // 3. Hapus folder dokumentasi lama jika ada
+    // 3. PENGECEKAN & PERCABANGAN: Cek apakah folder "documentation" sudah ada
     if (fs.existsSync("documentation")) {
+      console.log(`\n⚠️  PENTING: Folder "documentation" sudah ada di direktori Anda.`);
+
+      // Tampilkan pertanyaan konfirmasi Y/N
+      const confirmAnswer = await inquirer.prompt([
+        {
+          type: "confirm",
+          name: "shouldDelete",
+          message: "Apakah Anda ingin menghapus folder tersebut dan melanjutkan proses export?",
+          default: false, // Nilai default adalah No demi keamanan
+        },
+      ]);
+
+      // Jika user memilih 'No' (false), batalkan proses ekspor
+      if (!confirmAnswer.shouldDelete) {
+        console.log("\n❌ Proses export DICANCEL oleh pengguna. Folder lama tidak diubah.");
+        return;
+      }
+
+      // Jika user memilih 'Yes' (true), hapus folder lama
+      console.log('🗑️  Menghapus folder "documentation" lama...');
       fs.rmSync("documentation", { recursive: true, force: true });
     }
+
+    console.log(`\n🚀 Memulai build untuk tema: ${folderTarget}...`);
 
     // 4. Jalankan Hugo Build secara dinamis sesuai folder yang dipilih
     const hugoCmd = `hugo build --baseURL="./" --minify --destination="documentation" --contentDir="content/${folderTarget}"`;
@@ -71,11 +91,10 @@ function cleanHtmlFiles(dir) {
     const stat = fs.lstatSync(filename);
 
     if (stat.isDirectory()) {
-      cleanHtmlFiles(filename); // Masuk ke subfolder
+      cleanHtmlFiles(filename);
     } else if (filename.endsWith(".html")) {
       let content = fs.readFileSync(filename, "utf8");
 
-      // Hapus atribut integrity dan crossorigin menggunakan Regex global
       const cleanedContent = content.replace(/\s?integrity="[^"]*"/g, "").replace(/\s?crossorigin="[^"]*"/g, "");
 
       fs.writeFileSync(filename, cleanedContent, "utf8");
