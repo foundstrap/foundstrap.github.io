@@ -6,6 +6,6 @@ Welcome to **Foundstrap Documentation**.
 
 Here you can find documentation for:
 
-- TeachFlex HTML
+- Documentation [TeachFlex HTML](/teachflex-html)
 - VersaSpace HTML
 - Other Foundstrap products
